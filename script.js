@@ -11,16 +11,16 @@ function imprimirPessoaConcatenação() {
     console.log("A cor favorita de " + nome + " é " + corPreferida + ".");
 }
 
-
 function imprimirPessoaTemplate() {
     const nome = prompt("Qual o teu nome?");
     const corPreferida = prompt("E qual a sua cor favorita?");
-    console.log(`A cor favorita de ${nome} é ${corPreferida}.`);
-}
+    //console.log(`A cor favorita de ${nome} é ${corPreferida}.`);
+    alert(`A cor favorita de ${nome} é ${corPreferida}.`)
+} */
 
-imprimirPessoa();
-imprimirPessoaConcatenação();
-imprimirPessoaTemplate(); */
+//imprimirPessoa();
+//imprimirPessoaConcatenação();
+//imprimirPessoaTemplate();
 
 //EXERCÍCIO PRÁTICA 2
 /* function imprimirPessoa() {
@@ -29,7 +29,7 @@ imprimirPessoaTemplate(); */
     const citacao = prompt("Cite uma frase favorita:");
 
     console.log(`"${citacao}"`)
-    console.log(`Nome: ${nome} \nCor preferida: ${corPreferida}`);
+    console.log(`Nome: ${nome}\nCor preferida: ${corPreferida}`);
 }
 
 imprimirPessoa(); */
@@ -48,7 +48,7 @@ imprimirPessoa(); */
 function cadastrarUsuario() {
     const usuario = prompt("Digite o seu nome.");
     const email = prompt("Digite o teu e-mail.");
-    let frase = `O e-mail ${email} foi cadastrado com sucesso. \nBoas vindas, ${usuario}! \nO nome ${usuario} possui ${usuario.length} caracteres.`
+    let frase = `O e-mail ${email} foi cadastrado com sucesso.\nBoas vindas, ${usuario}!\nO nome ${usuario} possui ${usuario.length} caracteres.`
     console.log(frase);
     console.log(frase.replaceAll("r", "x"));
     console.log(`O e-mail cadastrado possui o "@"? ${email.includes("@")}`);
